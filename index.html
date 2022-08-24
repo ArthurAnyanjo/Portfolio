@@ -1,18 +1,72 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/c9f4917d8c.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Arthur's Portfolio</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <section class="header">
-        <nav>
-            <a href="index.html"><img src="images/logo.png" alt="logo" style="height: 200px; width: 200px;"></a>
-        </nav>
+      <nav>
+        <a href="index.html"
+          ><img
+            src="images/logo.png"
+            alt="logo"
+            style="height: 200px; width: 200px"
+        /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="">HOME</a></li>
+            <li><a href="">ABOUT</a></li>
+            <li><a href="">SERVICES</a></li>
+            <li><a href="">BLOG</a></li>
+            <li><a href="">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <div class="textbox">
+        <h1>Business Web Design + Development</h1>
+        <p>
+          No page builders - 100% hand-coded websites with superior results
+          starting at £99/mo.
+        </p>
+        <a href="" class="main-cta">GET IN TOUCH!</a>
+      </div>
     </section>
-</body>
 
+    <!--What We Do-->
+    <section class="what-we-do">
+      <h1>What We Do</h1>
+      <p>
+        We specialize in small business web design and development for clients
+        anywhere in the UK. Every line of code is written by Line by Line to ensure the best performance,
+        which helps bring in more customers to your site and bring more revenue
+        to your business.
+      </p>
+    </section>
+
+    <!--Javascript to toggle menu-->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
 </html>
