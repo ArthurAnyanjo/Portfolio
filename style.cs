@@ -238,7 +238,6 @@ h3 {
   height: 100%;
   width: 100%;
   position: absolute;
-  border-radius: 30px;
   top: 0;
   left: 0;
   transition: 0.5s;
@@ -421,57 +420,7 @@ h3 {
   width: 100%;
   text-align: center;
   padding: 30px 0;
-  margin: auto;
-  position: relative;
 }
 .footer h4 {
   margin-top: 20px;
-}
-.footer p {
-  line-height: 1.7em;
-  font-size: 1.1em;
-  font-weight: 300;
-}
-/*----About Us Page --*/
-.sub-header {
-  height: 50vh;
-  height: 100%;
-  background-image: linear-gradient(rgba(4, 9, 39, 0.7), rgba(4, 9, 30, 0.7)), url(images/about-banner.jpg);
-  background-position: center;
-  background-size: cover;
-  text-align: center;
-  color: #fff;
-}
-.sub-header h1 {
-  margin-top: 100px;
-  transform: translate(0, -100%);
-}
-.about-us {
-  width: 80%;
-  margin: auto;
-  padding-top: 80px;
-  padding-bottom: 50px;
-}
-.about-col {
-  flex-basis: 48%;
-  padding: 30px 2px;
-}
-.about-col img {
-  width: 100%;
-}
-.about-col h1 {
-  padding-top: 0;
-}
-.about-col p {
-  padding: 15px 0 25px;
-}
-.red-btn {
-  border: 1px solid #001099;
-  background: transparent;
-  color: #001099;
-  transition: 0.1s;
-}
-.red-btn:hover {
-  background: #001099;
-  color: #fff;
 }
